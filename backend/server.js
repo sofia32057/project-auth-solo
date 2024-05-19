@@ -4,6 +4,8 @@ import mongoose, { model } from "mongoose";
 import dotenv from "dotenv";
 import bcrypt from "bcrypt";
 
+dotenv.config();
+
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/project-auth";
 mongoose.connect(mongoUrl);
 mongoose.Promise = Promise;
